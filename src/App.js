@@ -1,5 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import 'hack';
+import './style.css';
 
 import { Header } from './Components/Header';
 import { Textbox } from './Components/Textbox';
@@ -73,7 +75,7 @@ class App extends React.Component {
 
   render() {
     return(
-      <div>
+      <div className='hack dark-grey'>
         <Header nam={this.state.username} />
         <Textbox updateEntry={this.updateEntry} />
         <hr />
